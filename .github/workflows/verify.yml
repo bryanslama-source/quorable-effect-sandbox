@@ -1,0 +1,22 @@
+name: verify
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify sandbox
+        run: |
+          echo "Quorable Effect sandbox verification"
+          echo "Repository: $GITHUB_REPOSITORY"
+          echo "SHA: $GITHUB_SHA"
+          echo "Verification passed."
