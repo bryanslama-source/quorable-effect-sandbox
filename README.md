@@ -32,3 +32,9 @@ No OAuth client secrets.
 No GitHub App private keys.
 
 This repository is disposable.
+
+## Boundary Test
+
+Proposed through the external desk fork to validate Quorable's protected authority path.
+
+Second push used to validate latest-head approval enforcement.
